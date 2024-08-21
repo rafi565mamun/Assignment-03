@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-03</title>
+   <!-- google-font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+<!--   font awesome   icon link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- daisy-ui  and tailwind link -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg_color: '#FFFFFF',
+            btn_yellow: '#ABEF5F',
+          }
+        }
+      }
+    }
+  </script>
+
+
+<style>
+    .manrope {
+        font-family: "Manrope", sans-serif;
+}
+</style>
+
+</head>
+<body class=" manrope ">
+    <!--       header -- part  -->
+<header class="container mx-auto">
+ <!--    navber part   -->
+  <nav>
+ <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          
+          <i class="fa-solid fa-arrow-right transform -rotate-45 bg-btn_yellow p-3 rounded-full"></i>
+          <a class="btn btn-ghost text-3xl font-extrabold">Rinterio</a>
+        </div>
+
+
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+             <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end  border-2 border-black  hidden md:flex lg:flex">
+
+            <div >
+                <i class="fa-solid fa-magnifying-glass bg-gray-400 p-3 rounded-full mr-2"></i>
+                <i class="fa-solid fa-cart-shopping  bg-gray-400 p-3 rounded-full mr-2"></i>
+                
+            </div>
+            <div class="">
+                <a class=" py-4 px-5 bg-btn_yellow font-extrabold rounded-3xl">Book Consult <i class="fa-solid fa-arrow-right transform -rotate-45 bg-black p-3 rounded-full text-white"></i></a>
+            </div>
+         
+        </div>
+        <div tabindex="0" role="button" class="btn btn-ghost md:hidden lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <div class="dropdown">
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  p-2 shadow ">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+            
+            
+          </ul>
+          </div>
+        </div>
+      </div>
+
+
+  </nav>
+
+
+</header>
+
+</body>
+    
+
+</html>
